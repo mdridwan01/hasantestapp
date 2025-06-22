@@ -202,7 +202,7 @@ async function sendPi() {
         console.error('❌ Error:', e.response?.data?.extras?.result_codes || e.message || e);
         console.log(`-------------------------------------------------------------------------------------`)
     } finally {
-        setTimeout(sendPi, 499); // Run again after 999 ms
+        setTimeout(sendPi, 1000); // Run again after 999 ms
     }
 }
 
